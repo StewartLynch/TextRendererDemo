@@ -18,6 +18,13 @@
 		BB8CE6542C4DB3D50029AE8B /* AnimatedGlyphRenderingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8CE6412C4DB3D50029AE8B /* AnimatedGlyphRenderingView.swift */; };
 		BB8CE6552C4DB3D50029AE8B /* StartTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8CE6462C4DB3D50029AE8B /* StartTab.swift */; };
 		BB8CE6562C4DB3D50029AE8B /* TheBasics2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8CE6492C4DB3D50029AE8B /* TheBasics2View.swift */; };
+		BBB8AECA2C4EB89500BEAD4C /* OutlineRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB8AEC92C4EB89500BEAD4C /* OutlineRenderer.swift */; };
+		BBB8AECC2C4EBC8A00BEAD4C /* HighlightRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB8AECB2C4EBC8A00BEAD4C /* HighlightRenderer.swift */; };
+		BBB8AECE2C4EE2C200BEAD4C /* AlternateLineRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB8AECD2C4EE2C200BEAD4C /* AlternateLineRenderer.swift */; };
+		BBB8AED02C4EE38800BEAD4C /* AngledLineRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB8AECF2C4EE38800BEAD4C /* AngledLineRenderer.swift */; };
+		BBB8AED22C4EE45600BEAD4C /* Text.Layout+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB8AED12C4EE44900BEAD4C /* Text.Layout+Extension.swift */; };
+		BBB8AED42C4EE5DA00BEAD4C /* UpDownRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB8AED32C4EE5DA00BEAD4C /* UpDownRenderer.swift */; };
+		BBB8AED62C4EE79B00BEAD4C /* AnimatableUpDownRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB8AED52C4EE79B00BEAD4C /* AnimatableUpDownRenderer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +40,13 @@
 		BB8CE6482C4DB3D50029AE8B /* TextRendererDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRendererDemoApp.swift; sourceTree = "<group>"; };
 		BB8CE6492C4DB3D50029AE8B /* TheBasics2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBasics2View.swift; sourceTree = "<group>"; };
 		BB8CE64A2C4DB3D50029AE8B /* TheBasicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBasicsView.swift; sourceTree = "<group>"; };
+		BBB8AEC92C4EB89500BEAD4C /* OutlineRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineRenderer.swift; sourceTree = "<group>"; };
+		BBB8AECB2C4EBC8A00BEAD4C /* HighlightRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightRenderer.swift; sourceTree = "<group>"; };
+		BBB8AECD2C4EE2C200BEAD4C /* AlternateLineRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlternateLineRenderer.swift; sourceTree = "<group>"; };
+		BBB8AECF2C4EE38800BEAD4C /* AngledLineRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngledLineRenderer.swift; sourceTree = "<group>"; };
+		BBB8AED12C4EE44900BEAD4C /* Text.Layout+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text.Layout+Extension.swift"; sourceTree = "<group>"; };
+		BBB8AED32C4EE5DA00BEAD4C /* UpDownRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpDownRenderer.swift; sourceTree = "<group>"; };
+		BBB8AED52C4EE79B00BEAD4C /* AnimatableUpDownRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableUpDownRenderer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +95,26 @@
 				BB8CE6452C4DB3D50029AE8B /* LineRenderingExampleView.swift */,
 				BB8CE6432C4DB3D50029AE8B /* GlyphRenderingView.swift */,
 				BB8CE6412C4DB3D50029AE8B /* AnimatedGlyphRenderingView.swift */,
+				BBB8AEC82C4EB87B00BEAD4C /* TextRenderers */,
 				BB8CE6422C4DB3D50029AE8B /* Assets.xcassets */,
 				BB8CE6442C4DB3D50029AE8B /* Launch Screen.storyboard */,
 				BB8CE6402C4DB3D50029AE8B /* Preview Content */,
 			);
 			path = TextRendererDemo;
+			sourceTree = "<group>";
+		};
+		BBB8AEC82C4EB87B00BEAD4C /* TextRenderers */ = {
+			isa = PBXGroup;
+			children = (
+				BBB8AED52C4EE79B00BEAD4C /* AnimatableUpDownRenderer.swift */,
+				BBB8AED32C4EE5DA00BEAD4C /* UpDownRenderer.swift */,
+				BBB8AECF2C4EE38800BEAD4C /* AngledLineRenderer.swift */,
+				BBB8AED12C4EE44900BEAD4C /* Text.Layout+Extension.swift */,
+				BBB8AECD2C4EE2C200BEAD4C /* AlternateLineRenderer.swift */,
+				BBB8AECB2C4EBC8A00BEAD4C /* HighlightRenderer.swift */,
+				BBB8AEC92C4EB89500BEAD4C /* OutlineRenderer.swift */,
+			);
+			path = TextRenderers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,9 +191,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB8CE64F2C4DB3D50029AE8B /* TextRendererDemoApp.swift in Sources */,
+				BBB8AED42C4EE5DA00BEAD4C /* UpDownRenderer.swift in Sources */,
+				BBB8AECC2C4EBC8A00BEAD4C /* HighlightRenderer.swift in Sources */,
+				BBB8AECE2C4EE2C200BEAD4C /* AlternateLineRenderer.swift in Sources */,
 				BB8CE6502C4DB3D50029AE8B /* TheBasicsView.swift in Sources */,
 				BB8CE6512C4DB3D50029AE8B /* GlyphRenderingView.swift in Sources */,
+				BBB8AED02C4EE38800BEAD4C /* AngledLineRenderer.swift in Sources */,
+				BBB8AED62C4EE79B00BEAD4C /* AnimatableUpDownRenderer.swift in Sources */,
+				BBB8AECA2C4EB89500BEAD4C /* OutlineRenderer.swift in Sources */,
 				BB8CE6522C4DB3D50029AE8B /* LineRenderingExampleView.swift in Sources */,
+				BBB8AED22C4EE45600BEAD4C /* Text.Layout+Extension.swift in Sources */,
 				BB8CE6532C4DB3D50029AE8B /* TextAttributeExampleView.swift in Sources */,
 				BB8CE6542C4DB3D50029AE8B /* AnimatedGlyphRenderingView.swift in Sources */,
 				BB8CE6552C4DB3D50029AE8B /* StartTab.swift in Sources */,

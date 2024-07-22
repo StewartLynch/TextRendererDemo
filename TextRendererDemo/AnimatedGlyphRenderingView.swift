@@ -16,12 +16,20 @@
 import SwiftUI
 
 struct AnimatedGlyphRenderingView: View {
+    @State private var yOffset = 5.0
     let textView =  Text("TextRenderer are new\nin iOS 18\nIntroduced at WWDC24")
     var body: some View {
         NavigationStack {
             textView.font(.largeTitle).bold().foregroundStyle(.blue)
                 .multilineTextAlignment(.center)
+                .textRenderer(AnimatableUpDownRenderer(yOffset: yOffset))
                 .navigationTitle("AnimatableRenderer")
+        }
+        .onAppear {
+            withAnimation(.easeIn(duration: 2.0).repeatForever(autoreverses: true)) {
+//                yOffset = -yOffset
+                yOffset *= -1
+            }
         }
     }
 }

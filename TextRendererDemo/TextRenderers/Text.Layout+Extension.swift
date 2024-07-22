@@ -1,7 +1,7 @@
 //
 // ----------------------------------------------
 // Original project: TextRendererDemo
-// by  Stewart Lynch on 2024-07-21
+// by  Stewart Lynch on 2024-07-22
 //
 // Follow me on Mastodon: @StewartLynch@iosdev.space
 // Follow me on Threads: @StewartLynch (https://www.threads.net)
@@ -15,23 +15,10 @@
 
 import SwiftUI
 
-struct TextAttributeExampleView: View {
-    let topic = Text("TextRenderer")
-    let os = Text("iOS 18").customAttribute(HighlightAttribute())
-    let introduced = Text("WWDC24").customAttribute(HighlightAttribute())
-    var body: some View {
-        NavigationStack {
-            Text("\(topic) are new in \(os) Introduced at \(introduced)")
-                .textRenderer(HighlightRenderer())
-            .navigationTitle("Text Attributes")
+extension Text.Layout {
+    var flattenedRuns: some RandomAccessCollection<Text.Layout.Run> {
+        flatMap { line in
+        line
         }
     }
-
 }
-
-#Preview {
-    TextAttributeExampleView()
-}
-
-
-

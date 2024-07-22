@@ -25,6 +25,7 @@ struct TheBasicsView: View {
     Introduced at WWDC24
     """
             )
+            .textRenderer(OutlineRenderer(outlineType: .run))
             .navigationTitle("The basics")
         }
     }
@@ -33,4 +34,5 @@ struct TheBasicsView: View {
 #Preview {
     TheBasicsView()
 }
+
 

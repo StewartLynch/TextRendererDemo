@@ -17,9 +17,9 @@
 import SwiftUI
 
 struct TheBasics2View: View {
-    let topic = Text("TextRenderer")
-    let os = Text("iOS 18")
-    let introduced = Text("WWDC24")
+    let topic = Text("TextRenderer").bold()
+    let os = Text("iOS 18").font(.title)
+    let introduced = Text("WWDC24").italic()
     var body: some View {
         NavigationStack {
             Text(
@@ -29,6 +29,7 @@ struct TheBasics2View: View {
     Introduced at \(introduced)
     """
             )
+            .textRenderer(OutlineRenderer(outlineType: .run))
             .navigationTitle("The Basics 2")
         }
     }

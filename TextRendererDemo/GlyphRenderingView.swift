@@ -21,6 +21,7 @@ struct GlyphRenderingView: View {
         NavigationStack {
             textView.font(.largeTitle).bold().foregroundStyle(.blue)
                 .multilineTextAlignment(.center)
+                .textRenderer(UpDownRenderer())
                 .navigationTitle("GlyphRenderer")
         }
     }
@@ -29,3 +30,5 @@ struct GlyphRenderingView: View {
 #Preview {
     GlyphRenderingView()
 }
+
+

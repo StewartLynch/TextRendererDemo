@@ -20,6 +20,8 @@ struct LineRenderingExampleView: View {
     var body: some View {
         NavigationStack {
             textView.font(.title).bold().foregroundStyle(.blue)
+//                .textRenderer(AlternateLineRenderer())
+                .textRenderer(AngledLineRenderer())
                 .navigationTitle("LineRenderer")
         }
     }
