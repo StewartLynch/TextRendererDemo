@@ -21,6 +21,7 @@ struct AnimatedGlyphRenderingView: View {
         NavigationStack {
             textView.font(.largeTitle).bold().foregroundStyle(.blue)
                 .multilineTextAlignment(.center)
+                .navigationTitle("AnimatableRenderer")
         }
     }
 }
